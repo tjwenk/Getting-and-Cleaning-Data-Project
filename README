@@ -1,0 +1,22 @@
+PROJECT 1 README
+
+run_analysis.R is a R script that satisfies the requirements for the course project for Getting & Cleaning Data at Johns Hopkins University.
+
+Here are the objectives from the course web-site:
+1.  Merges the training and the test sets to create one data set.
+2.  Extracts only the measurements on the mean and standard deviation for each measurement. 
+3.  Uses descriptive activity names to name the activities in the data set
+4.  Appropriately labels the data set with descriptive variable names.
+5.  From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
+run_analysis.R is a R script that takes the data downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and creates a tidy data set that contains the average gyroscopic and accelerometer measurements for 30 different subjects and 6 different activities from a experiment decribed here:  http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
+
+run_analysis.R assumes that you have downloaded and unzipped the data to the following folder:  
+
+(your working directory)/data/Project1/UCI HAR Dataset
+
+If you have done this, please do so before running the code.
+
+CodeBook.Rmd is a markdown file that describes each variable and data frame created by run_analysis.  Additionally, it contains the process for creating the tidy data set, tidy_data.
+

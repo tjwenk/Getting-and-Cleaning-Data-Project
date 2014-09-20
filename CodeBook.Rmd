@@ -1,0 +1,52 @@
+---
+title: "CodeBook"
+author: "tjwenk"
+date: "Friday, September 19, 2014"
+output: html_document
+---
+
+VARIABLES:
+x_train - data frame (7352 observations, 561 variables) containing measurements in the training dataset
+y_train - data frame (7352 observations, 1 variable) containing integers that represent different activities in the training dataset
+subject_train - data frame (7352 observations, 1 variable) containing integers that represent different subjects in the training dataset
+x_test - data frame (7352 observations, 561 variables) containing measurements in the test dataset
+y_test - data frame (7352 observations, 1 variable) containing integers that represent different activities in the test dataset
+subject_test - data frame (7352 observations, 1 variable) containing integers that represent different subjects in the test dataset
+features - data frame (561 observations, 2 variables) containing the variable names for "x" datasets
+activity_labels - data frame (6 observations, 2 variables) containing the names of the activities
+subject - integer vector (length of 10299) resulting from merging subject_train and subject_test containing the suject for every observation
+activity - character vector (length of 10299) containing the activity name for every observation
+varnames - character vector (length of 10299) containing the descriptive variable names for part 4
+tidy_melt - data frame (679734 observations, 4 variables) containing the melted desc_var_names data set
+
+
+DATA FRAMES THAT SATISFY PARTS 1-5 OF PROJECT 1:
+alldata - data frame (10299 observations, 561 variables) resulting from merging x_train and x_test for part 1
+
+mean_std_data - data frame (10299 observations, 66 variables) containing only mean and std variables from alldata for part 2
+
+subject_activity_data - data frame (10299 observations, 68 variables) containing subject and activity labels for every observation in mean_std_data for part 3
+
+desc_var_names - data frame (10299 observations, 68 variables) containing more descriptive names for subject_activity_data
+
+tidy_data - data frame (180 observations, 68 variables) containing averages for each variable for each subject and activity for part 5
+
+PART 1:
+- alldata was created by merging x_train and y_train using rbind
+
+PART 2:
+- Variable names were assigned to alldata by assigning the 2nd column of features to the column names of all data
+- mean_std_data was created by selecting columns that only mean() and std() information
+
+PART 3:
+- subject was created by bind the subject_train and subject_test data frames and creating a character vector
+- activity was created by mapping the values of activity_labels to x_train and y_train to create a character vector
+- subject_activity_data was created by binding subject and activity to mean_std_data and sorting
+
+PART 4:
+- varnames was created by substituting different character strings to the variable names to create more descriptive variables
+- desc_var_names was created by renaming the columns of subject_activity_data with the varnames character vector
+
+PART 5:
+- tidy_melt was created by melting desc_var_names
+- tidy_data was created by casting tidy_melt by subject and activity with mean values for all the variables
