@@ -21,15 +21,15 @@ VARIABLES:
 
 
 DATA FRAMES THAT SATISFY PARTS 1-5 OF PROJECT 1:
-alldata - data frame (10299 observations, 561 variables) resulting from merging x_train and x_test for part 1
+- alldata - data frame (10299 observations, 561 variables) resulting from merging x_train and x_test for part 1
 
-mean_std_data - data frame (10299 observations, 66 variables) containing only mean and std variables from alldata for part 2
+- mean_std_data - data frame (10299 observations, 66 variables) containing only mean and std variables from alldata for part 2
 
-subject_activity_data - data frame (10299 observations, 68 variables) containing subject and activity labels for every observation in mean_std_data for part 3
+- subject_activity_data - data frame (10299 observations, 68 variables) containing subject and activity labels for every observation in mean_std_data for part 3
 
-desc_var_names - data frame (10299 observations, 68 variables) containing more descriptive names for subject_activity_data
+- desc_var_names - data frame (10299 observations, 68 variables) containing more descriptive names for subject_activity_data
 
-tidy_data - data frame (180 observations, 68 variables) containing averages for each variable for each subject and activity for part 5
+- tidy_data - data frame (180 observations, 68 variables) containing averages for each variable for each subject and activity for part 5
 
 PART 1:
 - alldata was created by merging x_train and y_train using rbind
