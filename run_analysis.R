@@ -69,4 +69,4 @@ tidy_data<-dcast(tidy_melt, subject + activity ~ varnames[3:length(varnames)], m
 
 #Make .csv file of clean data
 setwd("~/data/Project1")
-write.table(tidy_data,file="tidy_data.csv",sep=",",row.names=F) 
+write.table(tidy_data,file="tidy_data.txt",sep=",",row.names=F) 
