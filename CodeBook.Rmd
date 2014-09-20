@@ -6,18 +6,18 @@ output: html_document
 ---
 
 VARIABLES:
-x_train - data frame (7352 observations, 561 variables) containing measurements in the training dataset
-y_train - data frame (7352 observations, 1 variable) containing integers that represent different activities in the training dataset
-subject_train - data frame (7352 observations, 1 variable) containing integers that represent different subjects in the training dataset
-x_test - data frame (7352 observations, 561 variables) containing measurements in the test dataset
-y_test - data frame (7352 observations, 1 variable) containing integers that represent different activities in the test dataset
-subject_test - data frame (7352 observations, 1 variable) containing integers that represent different subjects in the test dataset
-features - data frame (561 observations, 2 variables) containing the variable names for "x" datasets
-activity_labels - data frame (6 observations, 2 variables) containing the names of the activities
-subject - integer vector (length of 10299) resulting from merging subject_train and subject_test containing the suject for every observation
-activity - character vector (length of 10299) containing the activity name for every observation
-varnames - character vector (length of 10299) containing the descriptive variable names for part 4
-tidy_melt - data frame (679734 observations, 4 variables) containing the melted desc_var_names data set
+- x_train - data frame (7352 observations, 561 variables) containing measurements in the training dataset
+- y_train - data frame (7352 observations, 1 variable) containing integers that represent different activities in the training dataset
+- subject_train - data frame (7352 observations, 1 variable) containing integers that represent different subjects in the training dataset
+- x_test - data frame (7352 observations, 561 variables) containing measurements in the test dataset
+- y_test - data frame (7352 observations, 1 variable) containing integers that represent different activities in the test dataset
+- subject_test - data frame (7352 observations, 1 variable) containing integers that represent different subjects in the test dataset
+- features - data frame (561 observations, 2 variables) containing the variable names for "x" datasets
+- activity_labels - data frame (6 observations, 2 variables) containing the names of the activities
+- subject - integer vector (length of 10299) resulting from merging subject_train and subject_test containing the suject for every observation
+- activity - character vector (length of 10299) containing the activity name for every observation
+- varnames - character vector (length of 10299) containing the descriptive variable names for part 4
+- tidy_melt - data frame (679734 observations, 4 variables) containing the melted desc_var_names data set
 
 
 DATA FRAMES THAT SATISFY PARTS 1-5 OF PROJECT 1:
